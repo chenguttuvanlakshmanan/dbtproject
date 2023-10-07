@@ -7,8 +7,8 @@
 
 with mytable as (
 
-    select 2 
+    select 2 as newcol
     union
-    select 3
+    select 3 as newcol
 )
 select * from mytable
