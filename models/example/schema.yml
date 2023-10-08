@@ -28,6 +28,10 @@ sources:
     schema: dbt_clakshmanan  
     tables:
       - name: orders
+        columns:
+          - name : custid
+            tests:
+                - unique
       - name: customers
 
 
