@@ -19,3 +19,15 @@ models:
             tests:
                 - unique
                 - not_null
+
+
+
+sources:
+  - name: factorder
+    database: demodbt
+    schema: dbt_clakshmanan  
+    tables:
+      - name: orders
+      - name: customers
+
+
