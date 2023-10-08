@@ -3,12 +3,12 @@ with customers as(
     from {{ source('factorder', 'customers') }}
 ),
 orders as(
-    select orderid,custid,paymemts 
+    select orderid,custid,payments 
     from {{ source('factorder', 'orders') }}
 )
 select 
-  customername,
-  payments
+  customers.customername,
+  orders.payments
 from
 orders 
 left join customers
