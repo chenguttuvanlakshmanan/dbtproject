@@ -1,3 +1,9 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
 with customers as(
     select custid ,customername 
     from {{ source('factorder', 'customers') }}
