@@ -29,9 +29,12 @@ sources:
     tables:
       - name: orders
         columns:
-          - name : custid
+          - name : orderid
             tests:
-                - unique
+                 - unique
+                 - not_null
+
+                    
       - name: customers
 
 
